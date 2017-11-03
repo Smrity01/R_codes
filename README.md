@@ -1,4 +1,4 @@
-# SCIENTIFIC CALCULATOR WITH THESE FUNCTIONALITIES
+# STATISTICAL CALCULATOR WITH THESE FUNCTIONALITIES
 
 1. Descriptive Analysis (Mean, Median, Mode, Variance, Standard Deviation, Mean Absolute Deviation, Range, Quartiles, IQR, Minimum,      Maximum, Skewness, Kurtosis, Moments)
 
