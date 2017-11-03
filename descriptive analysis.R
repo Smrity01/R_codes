@@ -52,14 +52,11 @@ cal_median<-function(data){
     median_element <- formatC(answer,digits = 6,format = "f")
     return(median_element)
   }
-  
-  
 }
 
 cal_quartiles<-function(data){
   data_len <-length(data)
   sorted <- sort(data)
-  #cat('\n sorted data:',sorted)
   q1_index <- as.numeric(data_len/4)+1
   q2 <- cal_median(data)
   q3_index <- as.numeric((3*data_len)/4)+1
