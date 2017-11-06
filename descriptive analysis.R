@@ -94,7 +94,7 @@ maximum<-function(data){
 range<-function(data){
   sorted_data <- sort(data)
   data_len <- length(data)
-  answer <- data[data_len]-data[1]
+  answer <- sorted_data[data_len]-data[1]
   range_data <- formatC(answer,digits = 6,format = "f")
   return(range_data)
 }
