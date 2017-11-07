@@ -91,7 +91,7 @@ maximum<-function(data){
   return(sorted[data_len])
 }
 
-range<-function(data){
+cal_range<-function(data){
   sorted_data <- sort(data)
   data_len <- length(data)
   answer <- sorted_data[data_len]-data[1]
@@ -181,7 +181,7 @@ descriptive_analysis<-function(){
       print('*****Mean of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #********MEAN OF THE DATA**********
-      m_data<-calculate_mean(data)
+      m_data <- calculate_mean(data)
       cat('\n \n Mean of the data is: ',m_data)
       
     }
@@ -189,7 +189,7 @@ descriptive_analysis<-function(){
       print('\n *****Median of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #******MEDIAN OF THE DATA***********
-      med_data<-cal_median(data)
+      med_data <- cal_median(data)
       cat('\n \n Median of the data: ',med_data)
       
     }
@@ -205,7 +205,7 @@ descriptive_analysis<-function(){
       print('\n *****Variance of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #********VARIANCE OF THE DATA************
-      var_data<-variance(data)
+      var_data <- variance(data)
       cat('\n \n Variance of the data is :',var_data)
       
     }
@@ -213,7 +213,7 @@ descriptive_analysis<-function(){
       print('\n *****Standard deviation of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #**********STANDARD DEVIATION OF THE DATA********
-      sd_data<-standard_dev(data)
+      sd_data <- standard_dev(data)
       cat('\n \n Standard Deviation of the data is :',sd_data) 
       
     }
@@ -221,7 +221,7 @@ descriptive_analysis<-function(){
       print('\n *****Mean absolute deviation of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #***********MEAN ABSOLUTE OF THE DATA **********
-      mean_a_dev<-mean_absolute_dev(data)
+      mean_a_dev <- mean_absolute_dev(data)
       cat('\n \n Mean Absolute Deviation of the data is : ',mean_a_dev)
       
     }
@@ -230,7 +230,7 @@ descriptive_analysis<-function(){
       print('\n *****Range of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #********RANGE OF THE DATA***************
-      range_of_data<-range(data)
+      range_of_data <- cal_range(data)
       cat('\n \n Range of the data is: ',range_of_data)
       
     }
@@ -238,7 +238,7 @@ descriptive_analysis<-function(){
       print('\n *****Quartiles of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #*******QUARTILE OF THE DATA**************
-      quartile_data<-cal_quartiles(data)
+      quartile_data <- cal_quartiles(data)
       cat('\n \n quartiles of the data is : Q1=',quartile_data[1],' Q2=',quartile_data[2],' Q3=',quartile_data[3])
       
     }
@@ -246,7 +246,7 @@ descriptive_analysis<-function(){
       print('\n *****IQR of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #*********IQR OF THE DATA**************
-      iqr_of_data<-IQR(data)
+      iqr_of_data <- IQR(data)
       cat('\n \n IQR of the data is: ',iqr_of_data)
       
     }
@@ -286,7 +286,7 @@ descriptive_analysis<-function(){
       print('\n *****Moments of the data*****')
       data <- as.vector(strsplit(readline(prompt= "Enter the data (comma-separated list) \n"), ",")[[1]])
       #*********MOMENTS OF THE DATA*******
-      moments_data<-moments(data)
+      moments_data <- moments(data)
       cat('\n \n ^^Moments^^ \n m1=',moments_data[1],'m2=',moments_data[2],'m3=',moments_data[3],'m4=',moments_data[4])
       
     }
